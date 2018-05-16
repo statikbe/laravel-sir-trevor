@@ -1,0 +1,32 @@
+{
+    "name": "statikbe/laravel-sir-trevor",
+    "description": "SirTrevor in Laravel",
+    "authors": [
+        {
+            "name": "Michiel Abé",
+            "email": "michiel.abe@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "laravelcollective/html": "~5",
+        "illuminate/support": "~5"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-0": {
+            "Statikbe\\LaravelSirTrevor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Statikbe\\LaravelSirTrevor\\SirtrevorServiceProvider"
+            ],
+            "aliases": {
+                "SirTrevor": "Statikbe\\LaravelSirTrevor\\SirTrevorFacade"
+            }
+        }
+    }
+}
