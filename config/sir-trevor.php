@@ -4,7 +4,7 @@ return [
 
     'class' => 'sir-trevor',
     
-    'blocktypes' => ['Text', 'List', 'Quote', 'Image', 'Video', 'Tweet', 'Heading', 'RichText', 'ImageExtended'],
+    'blocktypes' => ['Text', 'List', 'Quote', 'Video', 'Tweet', 'Heading', 'RichText', 'ImageExtended'],
 
     'js_path' => '/js/sir-trevor/sir-trevor.js',
 
