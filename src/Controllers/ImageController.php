@@ -1,9 +1,9 @@
 <?php
 
-namespace Statikbe\LaravelSirTrevor\Http\Controllers;
+namespace Statikbe\LaravelSirTrevor\Controllers;
 
-use Statikbe\LaravelSirTrevor\SirTrevor;
 use HTML;
+use Statikbe\LaravelSirTrevor\SirTrevor;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
