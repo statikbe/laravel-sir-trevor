@@ -1,6 +1,6 @@
 # Sir Trevor implementation
 
-##Installation
+## Installation
 You can install this package via composer using this command:
 ```bash
 composer require statikbe/laravel-sir-trevor
