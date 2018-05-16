@@ -43,6 +43,21 @@ Add to config/app.php inside the alias array
 'HTML' => Collective\Html\HtmlFacade::class,
 ``` 
 
+## Usage
+Add the following code inside the header of your page
+```html
+{!! SirTrevor::includeStylesheets() !!}
+```
+The Sir Trevor scripts require [jQuery](https://code.jquery.com/), so be sure to add [jQuery](https://code.jquery.com/) to your page.
+
+Add the following code at the bottem of your page
+```html
+{!! SirTrevor::includeScripts() !!}
+```
+On your Sir Trevor input field add the class name defined in your config, which by default is '**sir-trevor**'
+```html
+<input name="text" class="sir-trevor">
+```
 
 ## License
 
