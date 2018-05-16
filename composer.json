@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Statikbe\\LaravelSirTrevor\\SirtrevorServiceProvider"
+                "Statikbe\\LaravelSirTrevor\\SirTrevorServiceProvider"
             ],
             "aliases": {
                 "SirTrevor": "Statikbe\\LaravelSirTrevor\\SirTrevorFacade"
