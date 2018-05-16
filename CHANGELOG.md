@@ -1,4 +1,4 @@
-# Unreleased
+# [1.0.2] 16-05-2018
 ## Updated
 - Updated README
 
