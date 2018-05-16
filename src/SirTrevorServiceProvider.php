@@ -12,7 +12,7 @@ class SirTrevorServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../views', 'sirtrevor');
 
-        $this->app['router']->group(['namespace' => 'Statikbe\LaravelSirTrevor\Http\Controllers'], function () {
+        $this->app['router']->group(['namespace' => 'Statikbe\LaravelSirTrevor\Controllers'], function () {
             require __DIR__.'/../routes.php';
         });
 
