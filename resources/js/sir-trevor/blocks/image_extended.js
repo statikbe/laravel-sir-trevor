@@ -12,7 +12,7 @@ SirTrevor.Blocks.ImageExtended = SirTrevor.Blocks.Image.extend({
 
     loadData: function(data){
         $(this.editor).html($('<img>', { src: function () { if (data.image) { return data.image } else { return data.file.url } }})).show();
-        $(this.editor).append($('<input>', {type: 'text', class: 'copyright', name: 'text', placeholder: 'Copyright', value: data.copyright}));
+        $(this.editor).append($('<input>', {type: 'text', class: 'copyright', name: 'copyright', placeholder: 'Copyright', value: data.copyright}));
      },
 
     onBlockRender: function(){
