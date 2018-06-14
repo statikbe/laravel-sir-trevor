@@ -18,7 +18,7 @@ class ImageController extends Controller {
             $path = $file->store($config['upload_directory']);
         };
 
-        $publicPath = str_replace('public', 'storage', $path);
+        $publicPath = '/'.str_replace('public', 'storage', $path);
 
         return ['image' => $publicPath];
     }
