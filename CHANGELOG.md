@@ -1,3 +1,8 @@
+# [1.0.4] 12-09-2018
+## Updated
+- Image Controller was extended to resize files.
+- The resize width and JPEG quality can be set in the SirTrevor config.
+
 # [1.0.3] 14-06-2018
 ## Updated
 - Updated extended_image to add a slash before the image path to render the image correctly in javascript.

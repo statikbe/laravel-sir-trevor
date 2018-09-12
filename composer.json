@@ -11,7 +11,8 @@
     "require": {
         "php": ">=7.0",
         "laravelcollective/html": "~5",
-        "illuminate/support": "~5"
+        "illuminate/support": "~5",
+        "spatie/image": "^1.5"
     },
     "require-dev": {},
     "autoload": {

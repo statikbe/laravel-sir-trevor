@@ -3,7 +3,7 @@
 return [
 
     'class' => 'sir-trevor',
-    
+
     'blocktypes' => ['Text', 'List', 'Quote', 'Video', 'Tweet', 'Heading', 'RichText', 'ImageExtended'],
 
     'js_path' => '/js/sir-trevor/sir-trevor.js',
@@ -16,6 +16,10 @@ return [
 
     'upload_directory' => 'public/uploads',
 
-    'language' => 'nl'
+    'language' => 'nl',
+
+    'image_resize_width' => 1200,
+
+    'image_quality' => 80,
 
 ];
