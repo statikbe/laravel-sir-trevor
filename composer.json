@@ -1,6 +1,7 @@
 {
     "name": "statikbe/laravel-sir-trevor",
     "description": "SirTrevor in Laravel",
+    "license": "MIT",
     "authors": [
         {
             "name": "Michiel Abé",
