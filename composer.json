@@ -10,9 +10,9 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "laravelcollective/html": "~5",
-        "illuminate/support": "~5",
-        "spatie/image": "^1.5"
+        "laravelcollective/html": "^5.0|^6.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+        "spatie/image": "1.*"
     },
     "require-dev": {},
     "autoload": {
