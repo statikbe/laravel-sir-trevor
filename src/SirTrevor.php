@@ -16,6 +16,7 @@ class SirTrevor
         $html .= HTML::script("js/sir-trevor/blocks/rich_text.js") . PHP_EOL;
         $html .= HTML::script("js/sir-trevor/blocks/image_extended.js") . PHP_EOL;
         $html .= HTML::script("js/quill/quill.js") . PHP_EOL;
+        $html .= HTML::script("js/sir-trevor/blocks/iframe.js") . PHP_EOL;
 
         return $html.view('sirtrevor::js', ['config' => $config]);
     }
