@@ -5,6 +5,8 @@ SirTrevor.Blocks.Iframe = (function() {
         regex_src : /(?:<iframe)(?:.+)(?:src="){1}([^"].+?)(?:")(?:.+)(?:<\/iframe>)/i,
         regex_width : /(?:<iframe)(?:.+)(?:width="){1}([^"].+?)(?:")(?:.+)(?:<\/iframe>)/i,
         regex_height : /(?:<iframe)(?:.+)(?:height="){1}([^"].+?)(?:")(?:.+)(?:<\/iframe>)/i,
+        regex_frameborder : /(?:<iframe)(?:.+)(?:frameborder="){1}([^"].+?)(?:")(?:.+)(?:<\/iframe>)/i,
+        regex_allow : /(?:<iframe)(?:.+)(?:allow="){1}([^"].+?)(?:")(?:.+)(?:<\/iframe>)/i,
 
         type : 'iframe',
 
@@ -31,6 +33,11 @@ SirTrevor.Blocks.Iframe = (function() {
 
             val = $(event.target).val();
 
+            obj.body = val;
+
+            this.setAndLoadData(obj);
+
+            /*
             match_src = this.regex_src.exec(val);
 
             if (match_src !== null && !_.isUndefined(match_src[1])) {
@@ -48,8 +55,20 @@ SirTrevor.Blocks.Iframe = (function() {
                     obj.height = match_height[1];
                 }
 
+                match_frameborder = val.match(this.regex_frameborder);
+
+                if (match_frameborder !== null && !_.isUndefined(match_frameborder[1])) {
+                    obj.frameborder = match_frameborder[1];
+                }
+
+                match_allow = val.match(this.regex_allow);
+
+                if (match_allow !== null && !_.isUndefined(match_allow[1])) {
+                    obj.allow = match_allow[1];
+                }
+
                 this.setAndLoadData(obj);
-            }
+            }*/
         },
 
         uploadable : false,
@@ -57,15 +76,11 @@ SirTrevor.Blocks.Iframe = (function() {
         formattable : false,
 
         loadData : function(data) {
-            data.width = (typeof data.width == undefined || !data.width) ? '100%' : data.width;
-            data.height = (typeof data.height == undefined || !data.height) ? '100%' : data.height;
+            /*data.height = (typeof data.height == undefined || !data.height) ? '100%' : data.height;
+            data.width = (typeof data.width == undefined || !data.width) ? '100%' : data.width;*/
 
-            this.$inner.prepend(
-                $('<iframe>')
-                    .attr('src', data.src)
-                    .attr('class', 'st-block-embed')
-                    .attr('width', data.width)
-                    .attr('height', data.height)
+            $(this.inner).prepend(
+              $(data.body)
             );
 
             this.ready();
