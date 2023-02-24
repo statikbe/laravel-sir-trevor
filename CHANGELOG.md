@@ -1,3 +1,8 @@
+# [1.1.0] 24-02-2023
+## Updated
+- Upgraded spatie/image to v2
+- Support Laravel 9 & 10
+
 # [1.0.4] 12-09-2018
 ## Updated
 - Image Controller was extended to resize files.
